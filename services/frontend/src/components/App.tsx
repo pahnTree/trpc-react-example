@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import IndexPage from '../components/IndexPage';
+
+import IndexPage from '../pages/IndexPage';
 import { trpc } from '../utils/trpc';
+
 
 export function App() {
   const [queryClient] = useState(() => new QueryClient());

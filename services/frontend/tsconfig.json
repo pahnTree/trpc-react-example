@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "outDir": "build/dist",
     "module": "commonjs",
     "target": "es5",
     "lib": ["es6", "dom"],
     "sourceMap": true,
+    "esModuleInterop": true,
     "allowJs": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
+    "rootDir": "src",
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
@@ -20,10 +23,9 @@
     "acceptance-tests",
     "webpack",
     "jest",
-    "services/frontend/src/setupTests.ts",
-    "services/frontend/build/dist/**",
-    "services/frontend/dist/*",
-    "services/api/*"
+    "src/setupTests.ts",
+    "build/dist/**",
+    "dist/*"
   ],
   "types": [
     "typePatches"
